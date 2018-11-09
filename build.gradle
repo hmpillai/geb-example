@@ -42,6 +42,8 @@ dependencies {
 	// see https://github.com/tomdcc/geb-cucumber
 	testCompile "io.jdev.geb:geb-cucumber:0.3"
 
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.3.1'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '2.0rc3'
 	// pick whichever drivers you want. We test against most of them here.
 	// see src/test/resources/GebConfig.groovy for how to switch between them
 	cucumberRuntime "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
